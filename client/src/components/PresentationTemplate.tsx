@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { Download, Check, Users, Database, ShieldCheck, Zap, ChevronRight, ChevronLeft, BarChart3, Layout, PieChart, LineChart, FileSearch, MessageCircle, ClipboardCheck, Search, Filter, Bot, BrainCircuit, ScanSearch, AlertTriangle } from "lucide-react";
+import { Download, Check, Users, Database, ShieldCheck, Zap, ChevronRight, ChevronLeft, BarChart3, Layout, PieChart, LineChart, FileSearch, MessageCircle, ClipboardCheck, Search, Filter, Bot, BrainCircuit, ScanSearch, AlertTriangle, GraduationCap, Presentation, BookOpen, TrendingUp, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import collaborationImg from "../assets/images/collaboration-unity.png";
 import dashboardImg from "../assets/images/hr-dashboard-hero.png";
 import qualityImg from "../assets/images/data-quality-hero.png";
 import aiImg from "../assets/images/ai-agents-hero.png";
+import learningImg from "../assets/images/data-driven-hero.png";
 import { cn } from "@/lib/utils";
 
 // --- Types ---
@@ -572,6 +573,150 @@ const SlideFour = ({ printRef }: SlideProps) => {
   );
 }
 
+// --- Slide 5: Data Driven Working ---
+const SlideFive = ({ printRef }: SlideProps) => {
+  return (
+    <div 
+      ref={printRef}
+      className="relative bg-white overflow-hidden flex shadow-2xl transition-all duration-500"
+      style={{ width: "1280px", height: "720px", flexShrink: 0 }}
+    >
+        {/* Decorative Background */}
+        <div className="absolute top-0 right-0 w-[60%] h-full bg-slate-50/50 skew-x-[-12deg] origin-top translate-x-32 z-0" />
+        <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-60 z-0" />
+
+        {/* --- LEFT COLUMN: Title & Visual (40%) --- */}
+        <div className="w-[42%] relative z-10 p-12 flex flex-col justify-between">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-8">
+              <TrendingUp className="w-3 h-3" />
+              Datagedreven Werken
+            </div>
+            
+            <h1 className="text-[3.25rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
+              Datagedreven <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                werken
+              </span>
+            </h1>
+          </div>
+
+          {/* Main Illustration Area */}
+          <div className="flex-1 flex items-center justify-center relative my-4">
+             <div className="absolute w-[300px] h-[300px] bg-gradient-to-tr from-blue-100 to-cyan-100 rounded-full blur-2xl opacity-70"></div>
+             <img 
+               src={learningImg} 
+               alt="Data Driven Working" 
+               className="relative w-full max-h-[320px] object-contain drop-shadow-xl z-10 hover:scale-105 transition-transform duration-500"
+             />
+          </div>
+
+          <div className="mt-4">
+              <p className="text-slate-500 font-medium text-xs flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100 w-fit">
+              <Users className="w-4 h-4 text-blue-500" />
+              <span className="font-bold uppercase tracking-wider text-slate-400">Samen met:</span> 
+              <span className="text-slate-600">HR Ops, Informatiemanagement en D&A</span>
+              </p>
+          </div>
+        </div>
+
+        {/* --- RIGHT COLUMN: Content Sections (60%) --- */}
+        <div className="w-[58%] relative z-10 p-12 pl-4 flex flex-col justify-center gap-5">
+          
+          {/* Section 1: Wat gaan we doen? */}
+          <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100">
+             <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                  <GraduationCap className="w-4 h-4" />
+                </div>
+                Wat gaan we doen?
+             </h3>
+             <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                   <Check className="w-5 h-5 text-blue-500 shrink-0" />
+                   <span>Leidinggevenden en HR helpen om <strong>zelf dashboards</strong> te gebruiken.</span>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                   <Check className="w-5 h-5 text-blue-500 shrink-0" />
+                   <span>Uitleg geven over <strong>KPI’s en cijfers</strong>: wat betekenen ze nu echt?</span>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                   <Check className="w-5 h-5 text-blue-500 shrink-0" />
+                   <span>Korte <strong>trainingen, handleidingen en voorbeelden</strong> beschikbaar maken.</span>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                   <Check className="w-5 h-5 text-blue-500 shrink-0" />
+                   <span><strong>Feedback ophalen</strong> en dashboards blijven verbeteren.</span>
+                </li>
+             </ul>
+          </div>
+
+          {/* Section 2: Wat merk jij hiervan? */}
+          <div className="bg-white border-2 border-blue-100 rounded-3xl p-6 shadow-lg relative overflow-hidden min-h-[140px] flex flex-col justify-center">
+             <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2 relative z-10">
+                <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center border border-blue-200">
+                  <Zap className="w-4 h-4 text-blue-600" />
+                </div>
+                Wat merk jij hiervan?
+             </h3>
+             <ul className="grid grid-cols-2 gap-x-6 gap-y-2 relative z-10">
+                <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 shrink-0" /> 
+                   <span>Minder losse Excel-lijstjes.</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 shrink-0" /> 
+                   <span>Sneller inzicht zonder tussenstap.</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 shrink-0" /> 
+                   <span>Meer vertrouwen in data.</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                   <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 shrink-0" /> 
+                   <span>Eenduidige manier van werken.</span>
+                </li>
+             </ul>
+          </div>
+
+          {/* Section 3: Hoe doen we dat? */}
+          <div className="bg-slate-50/80 rounded-3xl p-5 border border-slate-100">
+              <h3 className="text-lg font-display font-bold text-slate-800 mb-3 flex items-center gap-2">
+                 <Presentation className="w-5 h-5 text-slate-500" />
+                 Hoe doen we dat?
+              </h3>
+              <div className="flex gap-3">
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <Users className="w-4 h-4 text-purple-500" />
+                        <div className="text-xs font-bold text-slate-900">Workshops</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Trainingen & workshops voor leidinggevenden en HR.</div>
+                 </div>
+
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <BookOpen className="w-4 h-4 text-orange-500" />
+                        <div className="text-xs font-bold text-slate-900">Instructies</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Korte instructievideo’s en stappenplannen.</div>
+                 </div>
+
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <HelpCircle className="w-4 h-4 text-green-500" />
+                        <div className="text-xs font-bold text-slate-900">Feedback</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Een plek voor vragen en regelmatige evaluatie.</div>
+                 </div>
+              </div>
+           </div>
+
+        </div>
+    </div>
+  );
+}
+
 
 export const PresentationTemplate = () => {
   const printRef = useRef<HTMLDivElement>(null);
@@ -581,7 +726,8 @@ export const PresentationTemplate = () => {
      <SlideOne printRef={printRef} key="slide1" />,
      <SlideTwo printRef={printRef} key="slide2" />,
      <SlideThree printRef={printRef} key="slide3" />,
-     <SlideFour printRef={printRef} key="slide4" />
+     <SlideFour printRef={printRef} key="slide4" />,
+     <SlideFive printRef={printRef} key="slide5" />
   ];
 
   return (

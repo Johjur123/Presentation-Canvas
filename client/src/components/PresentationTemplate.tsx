@@ -88,7 +88,7 @@ export const PresentationTemplate = () => {
              />
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 hidden">
               <p className="text-slate-500 font-medium text-xs flex items-center gap-2">
               <span className="font-bold uppercase tracking-wider text-slate-400">Samen met:</span> 
               HR Advies, HR Ops, D&A en Informatiemanagement
@@ -176,6 +176,14 @@ export const PresentationTemplate = () => {
                    </span>
                 </li>
              </ul>
+          </div>
+
+          <div className="mt-2">
+              <p className="text-slate-500 font-medium text-xs flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100 w-fit">
+              <Users className="w-4 h-4 text-indigo-500" />
+              <span className="font-bold uppercase tracking-wider text-slate-400">Samen met:</span> 
+              <span className="text-slate-600">HR Advies, HR Ops, D&A en Informatiemanagement</span>
+              </p>
           </div>
 
         </div>

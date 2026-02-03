@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { Download, Check, Users, Database, ShieldCheck, Zap, ChevronRight, ChevronLeft, BarChart3, Layout, PieChart, LineChart, FileSearch, MessageCircle, ClipboardCheck, Search, Filter } from "lucide-react";
+import { Download, Check, Users, Database, ShieldCheck, Zap, ChevronRight, ChevronLeft, BarChart3, Layout, PieChart, LineChart, FileSearch, MessageCircle, ClipboardCheck, Search, Filter, Bot, BrainCircuit, ScanSearch, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import collaborationImg from "../assets/images/collaboration-unity.png";
 import dashboardImg from "../assets/images/hr-dashboard-hero.png";
 import qualityImg from "../assets/images/data-quality-hero.png";
+import aiImg from "../assets/images/ai-agents-hero.png";
 import { cn } from "@/lib/utils";
 
 // --- Types ---
@@ -431,6 +432,146 @@ const SlideThree = ({ printRef }: SlideProps) => {
   );
 }
 
+// --- Slide 4: AI Agents ---
+const SlideFour = ({ printRef }: SlideProps) => {
+  return (
+    <div 
+      ref={printRef}
+      className="relative bg-white overflow-hidden flex shadow-2xl transition-all duration-500"
+      style={{ width: "1280px", height: "720px", flexShrink: 0 }}
+    >
+        {/* Decorative Background - Mirrored */}
+        <div className="absolute top-0 left-0 w-[55%] h-full bg-slate-50/50 skew-x-[12deg] origin-top -translate-x-32 z-0" />
+        <div className="absolute -top-32 -right-32 w-96 h-96 bg-indigo-50 rounded-full blur-3xl opacity-60 z-0" />
+
+        {/* --- LEFT COLUMN: Content - 55% --- */}
+        <div className="w-[58%] relative z-10 p-12 pr-4 flex flex-col justify-center gap-5">
+           {/* Section 1: Wat gaan we doen */}
+           <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100">
+              <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center">
+                  <Bot className="w-4 h-4" />
+                </div>
+                Wat gaan we doen?
+              </h3>
+              <ul className="space-y-3">
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-indigo-500 shrink-0" />
+                    <span>We zetten <strong>AI-agents</strong> in als digitale assistenten die helpen bij controles.</span>
+                 </li>
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-indigo-500 shrink-0" />
+                    <span>Terugkerende controles worden <strong>deels automatisch</strong> uitgevoerd.</span>
+                 </li>
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-indigo-500 shrink-0" />
+                    <span>We bouwen een <strong>intern controle-dashboard</strong> om afwijkingen sneller te zien.</span>
+                 </li>
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-indigo-500 shrink-0" />
+                    <span>Meldingen van fouten of risico’s worden <strong>actief opgepakt</strong> en opgevolgd.</span>
+                 </li>
+              </ul>
+           </div>
+
+           {/* Section 2: Wat merk jij? */}
+           <div className="bg-white border-2 border-indigo-100 rounded-3xl p-6 shadow-lg relative overflow-hidden min-h-[140px] flex flex-col justify-center">
+              <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2 relative z-10">
+                <div className="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center border border-indigo-200">
+                  <Zap className="w-4 h-4 text-indigo-600" />
+                </div>
+                Wat merk jij hiervan?
+              </h3>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 relative z-10">
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-1.5 shrink-0" /> 
+                    <span>Minder handmatig controlewerk.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-1.5 shrink-0" /> 
+                    <span>Fouten eerder gesignaleerd.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-1.5 shrink-0" /> 
+                    <span>Betrouwbaardere HR-informatie.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full mt-1.5 shrink-0" /> 
+                    <span>Meer tijd voor verbeteren.</span>
+                 </li>
+              </ul>
+           </div>
+
+           {/* Section 3: Waar gebruiken we dit voor? */}
+           <div className="bg-slate-50/80 rounded-3xl p-5 border border-slate-100">
+              <h3 className="text-lg font-display font-bold text-slate-800 mb-3 flex items-center gap-2">
+                 <ScanSearch className="w-5 h-5 text-slate-500" />
+                 Waar gebruiken we dit voor?
+              </h3>
+              <div className="flex gap-3">
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <ClipboardCheck className="w-4 h-4 text-purple-500" />
+                        <div className="text-xs font-bold text-slate-900">Datakwaliteit</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Controle op datakwaliteit en volledigheid.</div>
+                 </div>
+
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <AlertTriangle className="w-4 h-4 text-orange-500" />
+                        <div className="text-xs font-bold text-slate-900">Signaleringsfunctie</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Signaleren van uitzonderingen of opvallende patronen.</div>
+                 </div>
+
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex-1 shadow-sm">
+                    <div className="flex items-center gap-2 mb-1">
+                        <Users className="w-4 h-4 text-blue-500" />
+                        <div className="text-xs font-bold text-slate-900">Ondersteuning</div>
+                    </div>
+                    <div className="text-[10px] text-slate-600 leading-tight">Ondersteuning van HR Operations en Interne Controle.</div>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        {/* --- RIGHT COLUMN: Title & Hero (45%) --- */}
+        <div className="w-[42%] relative z-10 p-12 flex flex-col justify-center items-end text-right">
+             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-bold uppercase tracking-wider mb-6">
+              <BrainCircuit className="w-3 h-3" />
+              Innovatie & Controle
+            </div>
+
+            <h1 className="text-[3rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
+              AI-agents & <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-l from-indigo-500 to-purple-600">
+                 slimme controles
+              </span>
+            </h1>
+
+             {/* Main Illustration Area */}
+             <div className="flex-1 w-full flex items-center justify-center relative my-4">
+                <div className="absolute w-[280px] h-[280px] bg-gradient-to-bl from-indigo-100 to-purple-100 rounded-full blur-3xl opacity-60"></div>
+                <img 
+                  src={aiImg} 
+                  alt="AI Agents" 
+                  className="relative w-full max-h-[340px] object-contain drop-shadow-2xl z-10 hover:scale-105 transition-transform duration-500"
+                />
+             </div>
+
+             <div className="mt-4 max-w-sm bg-amber-50 border border-amber-100 p-3 rounded-xl">
+                <p className="text-amber-800 font-medium text-[11px] leading-tight flex items-start gap-2 text-left">
+                   <AlertTriangle className="w-3 h-3 shrink-0 mt-0.5" />
+                   <span><strong>Belangrijk:</strong> AI-agents nemen geen besluiten — ze helpen signaleren, mensen blijven verantwoordelijk.</span>
+                </p>
+             </div>
+        </div>
+
+    </div>
+  );
+}
+
 
 export const PresentationTemplate = () => {
   const printRef = useRef<HTMLDivElement>(null);
@@ -439,7 +580,8 @@ export const PresentationTemplate = () => {
   const slides = [
      <SlideOne printRef={printRef} key="slide1" />,
      <SlideTwo printRef={printRef} key="slide2" />,
-     <SlideThree printRef={printRef} key="slide3" />
+     <SlideThree printRef={printRef} key="slide3" />,
+     <SlideFour printRef={printRef} key="slide4" />
   ];
 
   return (

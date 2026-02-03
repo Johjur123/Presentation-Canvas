@@ -98,38 +98,37 @@ const SlideOne = ({ printRef }: SlideProps) => {
           </div>
 
           {/* Section 2: Wat merk jij hiervan? */}
-          <div className="bg-gradient-to-br from-indigo-600 to-violet-700 rounded-3xl p-8 shadow-xl text-white relative overflow-hidden">
-             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+          <div className="bg-white border-2 border-indigo-100 rounded-3xl p-8 shadow-xl relative overflow-hidden">
              
-             <h3 className="text-2xl font-display font-bold text-white mb-6 flex items-center gap-3 relative z-10">
-                <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center shadow-inner border border-white/20">
-                  <Zap className="w-5 h-5 text-yellow-300" />
+             <h3 className="text-2xl font-display font-bold text-slate-900 mb-6 flex items-center gap-3 relative z-10">
+                <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center shadow-inner border border-indigo-200">
+                  <Zap className="w-5 h-5 text-indigo-600" />
                 </div>
                 Wat merk jij hiervan?
              </h3>
              
              <ul className="grid grid-cols-2 gap-x-8 gap-y-4 relative z-10">
                 <li className="flex items-start gap-3">
-                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-2.5 shrink-0 shadow-[0_0_8px_white]" />
-                   <span className="text-indigo-50 text-[0.95rem] leading-relaxed">
+                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2.5 shrink-0" />
+                   <span className="text-slate-900 text-[0.95rem] leading-relaxed">
                      Minder discussie over cijfers in overleggen.
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
-                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-2.5 shrink-0 shadow-[0_0_8px_white]" />
-                   <span className="text-indigo-50 text-[0.95rem] leading-relaxed">
+                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2.5 shrink-0" />
+                   <span className="text-slate-900 text-[0.95rem] leading-relaxed">
                      Je ziet overal dezelfde cijfers terug.
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
-                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-2.5 shrink-0 shadow-[0_0_8px_white]" />
-                   <span className="text-indigo-50 text-[0.95rem] leading-relaxed">
+                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2.5 shrink-0" />
+                   <span className="text-slate-900 text-[0.95rem] leading-relaxed">
                      Sneller antwoord op vragen over HR-data.
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
-                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-2.5 shrink-0 shadow-[0_0_8px_white]" />
-                   <span className="text-indigo-50 text-[0.95rem] leading-relaxed">
+                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2.5 shrink-0" />
+                   <span className="text-slate-900 text-[0.95rem] leading-relaxed">
                      Duidelijk wie je kunt benaderen bij wijzigingen.
                    </span>
                 </li>
@@ -188,84 +187,84 @@ const SlideTwo = ({ printRef }: SlideProps) => {
            </div>
 
            {/* Section 2: Wat merk jij? */}
-           <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-3xl p-6 text-white shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -mt-10 -mr-10"></div>
-              <h3 className="text-xl font-display font-bold text-white mb-4 flex items-center gap-2 relative z-10">
-                <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur flex items-center justify-center border border-white/20">
-                  <Zap className="w-4 h-4 text-yellow-300" />
+           <div className="bg-white border-2 border-cyan-100 rounded-3xl p-6 shadow-lg relative overflow-hidden">
+              
+              <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2 relative z-10">
+                <div className="w-8 h-8 rounded-lg bg-cyan-100 flex items-center justify-center border border-cyan-200">
+                  <Zap className="w-4 h-4 text-cyan-600" />
                 </div>
                 Wat merk jij hiervan?
               </h3>
               <ul className="grid grid-cols-2 gap-x-6 gap-y-3 relative z-10">
-                 <li className="flex items-start gap-2 text-sm text-white font-medium">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-1.5 shrink-0" /> 
                     <span>Sneller inzicht zonder losse Excelbestanden.</span>
                  </li>
-                 <li className="flex items-start gap-2 text-sm text-white font-medium">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-1.5 shrink-0" /> 
                     <span>Minder discussie over cijfers.</span>
                  </li>
-                 <li className="flex items-start gap-2 text-sm text-white font-medium">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-1.5 shrink-0" /> 
                     <span>Je vindt informatie makkelijker terug.</span>
                  </li>
-                 <li className="flex items-start gap-2 text-sm text-white font-medium">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                 <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
+                    <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-1.5 shrink-0" /> 
                     <span>Dashboards sluiten beter aan op je dagelijkse werk.</span>
                  </li>
               </ul>
            </div>
 
            {/* Section 3: Voorbeelden */}
-           <div className="bg-slate-50/80 rounded-3xl p-6 border border-slate-100">
-              <h3 className="text-xl font-display font-bold text-slate-800 mb-4 flex items-center gap-2">
+           <div className="bg-slate-50/80 rounded-3xl p-5 border border-slate-100">
+              <h3 className="text-lg font-display font-bold text-slate-800 mb-3 flex items-center gap-2">
                  <BarChart3 className="w-5 h-5 text-slate-500" />
-                 Voorbeelden dashboards <span className="text-xs font-normal text-slate-400 bg-white px-2 py-0.5 rounded border border-slate-200 ml-2">In ontwikkeling</span>
+                 Voorbeelden dashboards <span className="text-[10px] font-normal text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 ml-2">In ontwikkeling</span>
               </h3>
-              <div className="grid grid-cols-1 gap-3 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
+              <div className="grid grid-cols-2 gap-3">
                  
-                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <Users className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
+                 <div className="bg-white p-2.5 rounded-xl border border-slate-100 flex gap-2 items-start shadow-sm">
+                    <Users className="w-4 h-4 text-purple-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-900">Vacatureoverzicht</div>
-                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in openstaande vacatures, doorlooptijden en status per fase ter ondersteuning van werving en sturing.</div>
+                       <div className="text-xs font-bold text-slate-900 leading-tight">Vacatureoverzicht</div>
+                       <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">Inzicht in openstaande vacatures, doorlooptijden en status per fase.</div>
                     </div>
                  </div>
 
-                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <ShieldCheck className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                 <div className="bg-white p-2.5 rounded-xl border border-slate-100 flex gap-2 items-start shadow-sm">
+                    <ShieldCheck className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-900">Intern HR-kwaliteitsdashboard</div>
-                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in datakwaliteit, volledigheid, afwijkingen en security (IAM) binnen HR-data.</div>
+                       <div className="text-xs font-bold text-slate-900 leading-tight">Intern HR-kwaliteit</div>
+                       <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">Inzicht in datakwaliteit, volledigheid, afwijkingen en security (IAM).</div>
                     </div>
                  </div>
 
-                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <PieChart className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                 <div className="bg-white p-2.5 rounded-xl border border-slate-100 flex gap-2 items-start shadow-sm">
+                    <PieChart className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-900">Verlof dashboard</div>
-                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in verlofopname, verlofsaldo’s en trends binnen teams voor betere planning en continuïteit.</div>
+                       <div className="text-xs font-bold text-slate-900 leading-tight">Verlof dashboard</div>
+                       <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">Inzicht in verlofopname, verlofsaldo’s en trends binnen teams.</div>
                     </div>
                  </div>
 
-                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <Users className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                 <div className="bg-white p-2.5 rounded-xl border border-slate-100 flex gap-2 items-start shadow-sm">
+                    <Users className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-900">Arbo dashboard <span className="text-[10px] text-slate-400 font-normal">(verkennend)</span></div>
-                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in arbo-thema’s en verzuimbegeleiding, afhankelijk van databeschikbaarheid en afspraken.</div>
+                       <div className="text-xs font-bold text-slate-900 leading-tight">Arbo dashboard</div>
+                       <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">Inzicht in arbo-thema’s en verzuimbegeleiding.</div>
                     </div>
                  </div>
 
-                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <MessageCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                 <div className="bg-white p-2.5 rounded-xl border border-slate-100 flex gap-2 items-start shadow-sm col-span-2 w-1/2">
+                    <MessageCircle className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-900">HR Support dashboard <span className="text-[10px] text-slate-400 font-normal">(verkennend)</span></div>
-                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in belasting en afhandeling van HR-supportvragen, inclusief doorlooptijden en type meldingen.</div>
+                       <div className="text-xs font-bold text-slate-900 leading-tight">HR Support dashboard</div>
+                       <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">Inzicht in belasting en afhandeling van supportvragen.</div>
                     </div>
                  </div>
 
               </div>
-              <p className="text-center text-xs text-slate-400 mt-3 italic">En er volgen nog meer dashboards op basis van behoefte en feedback.</p>
+              <p className="text-center text-[10px] text-slate-400 mt-2 italic">En er volgen nog meer dashboards op basis van behoefte en feedback.</p>
            </div>
         </div>
 

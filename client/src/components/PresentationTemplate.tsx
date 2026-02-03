@@ -187,7 +187,7 @@ const SlideTwo = ({ printRef }: SlideProps) => {
            </div>
 
            {/* Section 2: Wat merk jij? */}
-           <div className="bg-white border-2 border-cyan-100 rounded-3xl p-6 shadow-lg relative overflow-hidden">
+           <div className="bg-white border-2 border-cyan-100 rounded-3xl p-6 shadow-lg relative overflow-hidden min-h-[160px] flex flex-col justify-center">
               
               <h3 className="text-xl font-display font-bold text-slate-900 mb-4 flex items-center gap-2 relative z-10">
                 <div className="w-8 h-8 rounded-lg bg-cyan-100 flex items-center justify-center border border-cyan-200">
@@ -195,7 +195,7 @@ const SlideTwo = ({ printRef }: SlideProps) => {
                 </div>
                 Wat merk jij hiervan?
               </h3>
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-3 relative z-10">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 relative z-10">
                  <li className="flex items-start gap-2 text-sm text-slate-900 font-medium">
                     <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-1.5 shrink-0" /> 
                     <span>Sneller inzicht zonder losse Excelbestanden.</span>

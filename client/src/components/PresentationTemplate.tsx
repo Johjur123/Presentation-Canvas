@@ -37,7 +37,7 @@ const SlideOne = ({ printRef }: SlideProps) => {
             
             <h1 className="text-[3.25rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
               Duidelijke HR-data & <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 print:text-blue-600 print:bg-none">
                 dezelfde cijfers
               </span> <br/>
               voor iedereen
@@ -280,7 +280,7 @@ const SlideTwo = ({ printRef }: SlideProps) => {
 
             <h1 className="text-[3rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
               Betere <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-l from-cyan-500 to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-l from-cyan-500 to-blue-600 print:text-blue-600 print:bg-none">
                  HR-dashboards
               </span> <br/>
               voor iedereen
@@ -323,7 +323,7 @@ const SlideThree = ({ printRef }: SlideProps) => {
             
             <h1 className="text-[3.25rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
               HR-data <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 print:text-blue-600 print:bg-none">
                 die klopt
               </span>
             </h1>
@@ -546,7 +546,7 @@ const SlideFour = ({ printRef }: SlideProps) => {
 
             <h1 className="text-[3rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
               AI-agents & <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-l from-indigo-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-l from-indigo-500 to-purple-600 print:text-indigo-600 print:bg-none">
                  slimme controles
               </span>
             </h1>
@@ -595,7 +595,7 @@ const SlideFive = ({ printRef }: SlideProps) => {
             
             <h1 className="text-[3.25rem] font-display font-extrabold text-slate-900 leading-[1.1] mb-6">
               Datagedreven <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 print:text-blue-600 print:bg-none">
                 werken
               </span>
             </h1>

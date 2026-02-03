@@ -72,25 +72,25 @@ const SlideOne = ({ printRef }: SlideProps) => {
              <ul className="grid grid-cols-1 gap-4 relative z-10">
                 <li className="flex items-start gap-3">
                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                   <span className="text-slate-600 text-[0.95rem] leading-relaxed">
-                     We spreken samen af <strong className="text-slate-800">welke definities</strong> we gebruiken (bijv. verzuim, instroom en uitstroom).
+                   <span className="text-slate-900 font-medium text-[0.95rem] leading-relaxed">
+                     We spreken samen af <strong className="text-black">welke definities</strong> we gebruiken (bijv. verzuim, instroom en uitstroom).
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                   <span className="text-slate-600 text-[0.95rem] leading-relaxed">
-                     We leggen vast <strong className="text-slate-800">wie eigenaar is</strong> van welke HR-data.
+                   <span className="text-slate-900 font-medium text-[0.95rem] leading-relaxed">
+                     We leggen vast <strong className="text-black">wie eigenaar is</strong> van welke HR-data.
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                   <span className="text-slate-600 text-[0.95rem] leading-relaxed">
-                     We maken een <strong className="text-slate-800">centrale plek</strong> waar definities en afspraken terug te vinden zijn.
+                   <span className="text-slate-900 font-medium text-[0.95rem] leading-relaxed">
+                     We maken een <strong className="text-black">centrale plek</strong> waar definities en afspraken terug te vinden zijn.
                    </span>
                 </li>
                 <li className="flex items-start gap-3">
                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                   <span className="text-slate-600 text-[0.95rem] leading-relaxed">
+                   <span className="text-slate-900 font-medium text-[0.95rem] leading-relaxed">
                      Nieuwe dashboards en rapportages sluiten altijd aan op deze afspraken.
                    </span>
                 </li>
@@ -171,18 +171,18 @@ const SlideTwo = ({ printRef }: SlideProps) => {
                 </div>
                 Wat gaan we doen?
               </h3>
-              <ul className="space-y-2">
-                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                    <Check className="w-4 h-4 text-cyan-500 mt-0.5 shrink-0" />
-                    <span>Dashboards <strong>overzichtelijker</strong> en makkelijker te gebruiken maken.</span>
+              <ul className="space-y-3">
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-cyan-500 shrink-0" />
+                    <span>We maken dashboards <strong>overzichtelijker</strong> en makkelijker te gebruiken.</span>
                  </li>
-                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                    <Check className="w-4 h-4 text-cyan-500 mt-0.5 shrink-0" />
-                    <span>Zorgen voor <strong>dezelfde cijfers en definities</strong> overal.</span>
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-cyan-500 shrink-0" />
+                    <span>We zorgen dat overal <strong>dezelfde cijfers en definities</strong> worden gebruikt.</span>
                  </li>
-                 <li className="flex items-start gap-2 text-sm text-slate-600">
-                    <Check className="w-4 h-4 text-cyan-500 mt-0.5 shrink-0" />
-                    <span>Nieuwe dashboards bouwen waar nog <strong>inzicht mist</strong>.</span>
+                 <li className="flex items-start gap-3 text-sm text-slate-900 font-medium">
+                    <Check className="w-5 h-5 text-cyan-500 shrink-0" />
+                    <span>We bouwen nieuwe dashboards waar nog <strong>inzicht mist</strong>.</span>
                  </li>
               </ul>
            </div>
@@ -196,11 +196,23 @@ const SlideTwo = ({ printRef }: SlideProps) => {
                 </div>
                 Wat merk jij hiervan?
               </h3>
-              <ul className="grid grid-cols-2 gap-x-4 gap-y-2 relative z-10">
-                 <li className="flex items-center gap-2 text-sm text-cyan-50"><div className="w-1 h-1 bg-white rounded-full" /> Sneller inzicht zonder Excel.</li>
-                 <li className="flex items-center gap-2 text-sm text-cyan-50"><div className="w-1 h-1 bg-white rounded-full" /> Minder discussie over cijfers.</li>
-                 <li className="flex items-center gap-2 text-sm text-cyan-50"><div className="w-1 h-1 bg-white rounded-full" /> Informatie makkelijker terugvinden.</li>
-                 <li className="flex items-center gap-2 text-sm text-cyan-50"><div className="w-1 h-1 bg-white rounded-full" /> Aansluiting op je werk.</li>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-3 relative z-10">
+                 <li className="flex items-start gap-2 text-sm text-white font-medium">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                    <span>Sneller inzicht zonder losse Excelbestanden.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-white font-medium">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                    <span>Minder discussie over cijfers.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-white font-medium">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                    <span>Je vindt informatie makkelijker terug.</span>
+                 </li>
+                 <li className="flex items-start gap-2 text-sm text-white font-medium">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 shrink-0" /> 
+                    <span>Dashboards sluiten beter aan op je dagelijkse werk.</span>
+                 </li>
               </ul>
            </div>
 
@@ -210,37 +222,50 @@ const SlideTwo = ({ printRef }: SlideProps) => {
                  <BarChart3 className="w-5 h-5 text-slate-500" />
                  Voorbeelden dashboards <span className="text-xs font-normal text-slate-400 bg-white px-2 py-0.5 rounded border border-slate-200 ml-2">In ontwikkeling</span>
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-3 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
+                 
                  <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
                     <Users className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-800">Vacatures & recruitment</div>
-                       <div className="text-xs text-slate-500 mt-1">Inzicht in openstaande vacatures en doorlooptijden.</div>
+                       <div className="text-sm font-bold text-slate-900">Vacatureoverzicht</div>
+                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in openstaande vacatures, doorlooptijden en status per fase ter ondersteuning van werving en sturing.</div>
                     </div>
                  </div>
+
+                 <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
+                    <ShieldCheck className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                    <div>
+                       <div className="text-sm font-bold text-slate-900">Intern HR-kwaliteitsdashboard</div>
+                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in datakwaliteit, volledigheid, afwijkingen en security (IAM) binnen HR-data.</div>
+                    </div>
+                 </div>
+
                  <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
                     <PieChart className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-800">Verlof & bezetting</div>
-                       <div className="text-xs text-slate-500 mt-1">Overzicht van verlof en capaciteit binnen teams.</div>
+                       <div className="text-sm font-bold text-slate-900">Verlof dashboard</div>
+                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in verlofopname, verlofsaldo’s en trends binnen teams voor betere planning en continuïteit.</div>
                     </div>
                  </div>
+
                  <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <MessageCircle className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                    <Users className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-800">HR-support</div>
-                       <div className="text-xs text-slate-500 mt-1">Inzicht in vragen en afhandeltijden.</div>
+                       <div className="text-sm font-bold text-slate-900">Arbo dashboard <span className="text-[10px] text-slate-400 font-normal">(verkennend)</span></div>
+                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in arbo-thema’s en verzuimbegeleiding, afhankelijk van databeschikbaarheid en afspraken.</div>
                     </div>
                  </div>
+
                  <div className="bg-white p-3 rounded-xl border border-slate-100 flex gap-3 items-start shadow-sm">
-                    <FileSearch className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                    <MessageCircle className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
                     <div>
-                       <div className="text-sm font-bold text-slate-800">Datakwaliteit</div>
-                       <div className="text-xs text-slate-500 mt-1">Signaleren van afwijkingen in HR-data.</div>
+                       <div className="text-sm font-bold text-slate-900">HR Support dashboard <span className="text-[10px] text-slate-400 font-normal">(verkennend)</span></div>
+                       <div className="text-xs text-slate-600 mt-1 font-medium">Inzicht in belasting en afhandeling van HR-supportvragen, inclusief doorlooptijden en type meldingen.</div>
                     </div>
                  </div>
+
               </div>
-              <p className="text-center text-xs text-slate-400 mt-4 italic">En er volgen nog meer dashboards op basis van behoefte en feedback.</p>
+              <p className="text-center text-xs text-slate-400 mt-3 italic">En er volgen nog meer dashboards op basis van behoefte en feedback.</p>
            </div>
         </div>
 

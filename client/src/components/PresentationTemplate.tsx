@@ -35,8 +35,8 @@ export const PresentationTemplate = () => {
 
   return (
     <div className="min-h-screen bg-slate-100 flex flex-col items-center justify-center p-8 font-sans">
-      {/* Action Bar */}
-      <div className="fixed top-6 right-6 z-50">
+      {/* Action Bar - Hidden as per request */}
+      {/* <div className="fixed top-6 right-6 z-50">
         <Button 
           onClick={handleExport}
           className="shadow-xl bg-indigo-600 hover:bg-indigo-700 text-white gap-2 rounded-full px-6 transition-all hover:scale-105"
@@ -44,7 +44,7 @@ export const PresentationTemplate = () => {
           <Download className="w-4 h-4" />
           Download PDF
         </Button>
-      </div>
+      </div> */}
 
       {/* Main Slide Container - 16:9 */}
       <div 
@@ -90,12 +90,10 @@ export const PresentationTemplate = () => {
 
           {/* Footer Info */}
           <div className="mt-4 pt-6 border-t border-slate-100">
-             <div className="flex items-center gap-2 text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">
-                <Users className="w-3 h-3" />
-                Samen met
-             </div>
-             <p className="text-slate-600 font-medium text-sm">
-                HR Advies • HR Ops • D&A • Informatiemanagement
+             <p className="text-slate-500 font-medium text-sm flex items-center gap-2">
+                <Users className="w-4 h-4 text-slate-400" />
+                <span className="text-slate-400 font-bold uppercase text-xs tracking-wider">Samen met:</span> 
+                HR Advies, HR Ops, D&A en Informatiemanagement
              </p>
           </div>
         </div>
@@ -185,9 +183,6 @@ export const PresentationTemplate = () => {
         </div>
       </div>
       
-      <p className="mt-8 text-slate-400 text-sm font-medium opacity-50">
-        Prezi-style Layout • Clean & Visual
-      </p>
     </div>
   );
 };

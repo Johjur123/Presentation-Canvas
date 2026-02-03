@@ -60,15 +60,6 @@ export const PresentationTemplate = () => {
         <div className="absolute top-0 right-0 w-[60%] h-full bg-slate-50/50 skew-x-[-12deg] origin-top translate-x-32 z-0" />
         <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-60 z-0" />
 
-        {/* Absolute Footer for "Samen met" to guarantee visibility */}
-        <div className="absolute bottom-8 left-12 z-20">
-            <p className="text-slate-500 font-medium text-sm flex items-center gap-2 bg-white/80 backdrop-blur-sm py-2 px-4 rounded-full border border-slate-100 shadow-sm">
-            <Users className="w-4 h-4 text-indigo-500" />
-            <span className="text-slate-400 font-bold uppercase text-xs tracking-wider">Samen met:</span> 
-            <span className="text-slate-700">HR Advies, HR Ops, D&A en Informatiemanagement</span>
-            </p>
-        </div>
-
         {/* --- LEFT COLUMN: Title & Visual (40%) --- */}
         <div className="w-[42%] relative z-10 p-12 flex flex-col justify-between">
           <div>
@@ -95,6 +86,13 @@ export const PresentationTemplate = () => {
                alt="Team Collaboration" 
                className="relative w-full max-h-[320px] object-contain drop-shadow-xl z-10"
              />
+          </div>
+
+          <div className="mt-4">
+              <p className="text-slate-500 font-medium text-xs flex items-center gap-2">
+              <span className="font-bold uppercase tracking-wider text-slate-400">Samen met:</span> 
+              HR Advies, HR Ops, D&A en Informatiemanagement
+              </p>
           </div>
         </div>
 

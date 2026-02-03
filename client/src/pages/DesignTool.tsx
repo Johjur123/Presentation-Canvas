@@ -1,5 +1,5 @@
-import { Canvas } from "@/components/Canvas";
+import { PresentationTemplate } from "@/components/PresentationTemplate";
 
 export default function DesignTool() {
-  return <Canvas />;
+  return <PresentationTemplate />;
 }
